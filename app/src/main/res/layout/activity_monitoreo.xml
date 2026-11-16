@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:padding="20dp">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Monitoreo" android:textSize="24sp" android:textStyle="bold" />
+
+    <TextView android:id="@+id/txtSesion" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:textColor="#757575" />
+
+    <TextView android:id="@+id/txtConexion" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="Desconectado" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button android:id="@+id/btnConectar" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:text="Conectar HC-05" />
+        <Button android:id="@+id/btnDesconectar" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:layout_marginStart="8dp" android:text="Desconectar" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/panel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="16dp"
+        android:background="#757575" android:gravity="center"
+        android:orientation="vertical" android:padding="24dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Nivel de gas (MQ-2)" android:textColor="#FFFFFF" />
+        <TextView android:id="@+id/txtGas" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="---" android:textColor="#FFFFFF"
+            android:textSize="72sp" android:textStyle="bold" />
+        <TextView android:id="@+id/txtEstado" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Sin datos" android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView android:id="@+id/txtActuadores" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginTop="16dp"
+        android:text="Válvula: ---    Ventilador: ---" android:textSize="16sp" />
+
+    <Button android:id="@+id/btnFuga" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="16dp"
+        android:text="Simular fuga de gas" />
+
+    <Button android:id="@+id/btnActivador" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Ir a Activador" />
+
+    <Button android:id="@+id/btnHistorial" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Ver historial" />
+
+    <Button android:id="@+id/btnSalir" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Cerrar sesión" />
+</LinearLayout>
+</ScrollView>
